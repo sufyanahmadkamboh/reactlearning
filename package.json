@@ -4,6 +4,8 @@
   "description": "this is first test react project",
   "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Sufyan",
