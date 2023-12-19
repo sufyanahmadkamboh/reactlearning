@@ -9331,7 +9331,7 @@ const ResContainer = () => {
     return (
         <div className="res-container">
             {
-                foodList.map(resturent => <ResCard foodData={resturent} />)
+                foodList.map(resturent => <ResCard key={resturent.id} foodData={resturent} />)
             }
             
         </div>
