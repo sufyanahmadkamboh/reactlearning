@@ -1,3 +1,93 @@
-#heading{
-    color: red;
+/* Header container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #ffffff; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+/* Logo */
+.logo {
+    width: 150px; /* Adjust the width of the logo as needed */
+}
+
+/* Navigation */
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-items ul > li {
+    margin: 0 15px; /* Adjust the margin between navigation items */
+}
+
+/* Styling for links inside navigation items */
+.nav-items ul > li > a {
+    text-decoration: none;
+    color: #333333; /* Set your desired text color */
+    font-weight: bold; /* Optional: Adjust font weight */
+}
+
+/* Optional: Hover effect for links */
+.nav-items ul > li > a:hover {
+    color: #007bff; /* Set your desired hover color */
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rest-card {
+    width: 325px;
+    height: 550px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.rest-card > img {
+    width: 300px;
+    height: 300px;
+}
+
+.search {
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* If you want to style the links in the footer, you can add the following CSS */
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
