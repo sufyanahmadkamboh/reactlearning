@@ -1,9 +1,6 @@
 
-import React from "react";
-import  ReactDOM  from "react-dom/client";
 
-
-const foodList = [
+export const restList = [
     {
         "id": 93025,
         "code": "kgdz",
@@ -9276,97 +9273,4 @@ const foodList = [
 ];
 
 
-const Logo = () => (
-    <div className="logo-container">
-        <img className="logo" src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png" />
-    </div>
-);
 
-const NavItems = () => {
-    return (
-    <div className="nav-items">
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Cart</li>
-        </ul>
-    </div>
-    );
-};
-
-const Header = () => {
-    return (
-        <div className="header-container">
-            <Logo />
-            <NavItems />
-
-        </div>
-    );
-    };
-
-const Search = () => {
-    return (
-        <div className="search">
-            Search
-
-        </div>
-    );
-};
-
-const ResCard = (props) => {
-    const {foodData} = props;
-    console.log(props);
-    return (
-        <div className="rest-card">
-            <img alt="res-card-logo" src={foodData.hero_listing_image} />
-            <h3>{foodData.name}</h3>
-            <h4>{foodData.address}, <br></br> {props.foodData.city.name}</h4>
-            <h4>Rating is {foodData.rating}</h4>
-        </div>
-    );
-};
-
-const ResContainer = () => {
-    return (
-        <div className="res-container">
-            {
-                foodList.map(resturent => <ResCard key={resturent.id} foodData={resturent} />)
-            }
-            
-        </div>
-    );
-};
-
-const Footer = () => {
-    return (
-        <div className="footer">
-            <p>&copy; 2023 Your Website. All rights reserved.</p>
-        </div>
-    );
-};
-
-const Body = () => {
-    return (
-        <div className="body">
-            <Search />
-            <ResContainer />
-            <Footer />
-        </div>
-
-    );
-};
-
-const AppLayout = () => {
-    return (
-        <div className="app">
-            <Header />
-            <Body />
-            
-        </div>
-    );
-    };
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />)
