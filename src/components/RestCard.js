@@ -7,7 +7,7 @@ const ResCard = (props) => {
         <div className="rest-card">
             <img alt="res-card-logo" src={restData.hero_listing_image} />
             <h3>{restData.name}</h3>
-            <h4>{restData.address}, <br></br> {props.restData.city.name}</h4>
+            <h4>{restData.address}</h4>
             <h4>Rating is {restData.rating}</h4>
         </div>
     );
